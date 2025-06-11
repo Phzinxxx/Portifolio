@@ -3,73 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - Mario Theme</title>
-    <link rel="stylesheet" href="Style/style.css"> 
-    <script src="Style/Script.js" defer></script> 
+    <meta name="description" content="Portfólio de Pedro Henrique - Desenvolvedor e Criador de Jogos">
+    <title>Portfólio do Pedro | Tema Mario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="Style/Script.js" defer></script>
 </head>
 <body>
+    <div class="stars"></div>
+    
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    
     <header>
         <nav>
             <div class="menu">
-                <button class="menu-btn">☰ Menu</button>
+                <button class="menu-btn" aria-label="Abrir menu de navegação"><i class="fas fa-bars"></i> Menu</button>
                 <div class="menu-items">
-                    <a href="#Projetos">Projetos</a>
-                    <a href="#Sobre">Sobre</a>
-                    <a href="#Contato">Contato</a>
+                    <a href="#Projetos"><i class="fas fa-gamepad"></i> Projetos</a>
+                    <a href="#Sobre"><i class="fas fa-user"></i> Sobre</a>
+                    <a href="#Contato"><i class="fas fa-envelope"></i> Contato</a>
                 </div>
             </div>
         </nav>
     </header>    
     
-    <div class="container">
-        <h1 id="title">It's-a Me, Pedro!</h1>
-        <p id="subtitle">Conheça meus projetos e aventuras no mundo do desenvolvimento.</p>
+    <main class="container"> <div class="title-container">
+            <h1 id="title">It's-a Me, Pedro!</h1>
+            <div class="mario-coin"></div>
+        </div>
+        <p id="subtitle">Desenvolvedor | Criador de Jogos | Entusiasta de TI</p>
         
         <div class="profile">
-            <img src="Img/eu no pc.jpg" alt="Pedro" class="imagem-circular">
+            <img src="Img/Foto eu de perfil.jpg" alt="Pedro " class="imagem-circular">
+            <div class="level-bar">
+                <div class="level-fill"></div>
+                <span class="level-text">Nível: 0%</span> </div>
         </div>
-    </div>
-    
-    <section id="Projetos">
+        
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </main>
+
+    <section id="Projetos" class="section">
         <div class="container">
-            <h2>Meus Projetos</h2>
+            <h2><i class="fas fa-gamepad"></i> Meus Projetos</h2>
             <div class="grid">
-                <div class="video-container">
-                    <video controls muted poster="Img/capa_jogo.png">
-                        <source src="Img/video do jogo fuga da detencao.mp4" type="video/mp4">
-                        Seu navegador não suporta vídeos.
-                    </video>
-                </div>                
-                <div class="item">
-                    <img src="Assets/Img/projeto2.jpg" alt="Landing Page">
-                    <h3>Landing Page de Startup</h3>
+                <div class="project-card">
+                    <div class="video-container">
+                        <video controls muted poster="Img/capa_jogo.png" aria-label="Vídeo do jogo Fuga da Detenção">
+                            <source src="Img/video do jogo fuga da detencao.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <h3>Fuga da Detenção</h3>
+                    <p>Jogo desenvolvido em Unity com mecânicas de plataforma e puzzle.</p>
+                    <div class="tech-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Pixel Art</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="Assets/Img/projeto3.jpg" alt="Portfólio">
-                    <h3>Meu Portfólio</h3>
+                
+                <div class="project-card">
+                    <img src="Assets/Img/projeto2.jpg" alt="Captura de tela de uma Landing Page" loading="lazy"> <h3>Landing Page de Startup</h3>
+                    <p>Design responsivo para empresa de tecnologia educacional.</p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="Assets/Img/projeto3.jpg" alt="Captura de tela do meu portfólio" loading="lazy"> <h3>Meu Portfólio</h3>
+                    <p>Site pessoal com tema Mario Bros interativo.</p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="Sobre">
+    <section id="Sobre" class="section">
         <div class="container">
-            <h2>Sobre mim</h2>
-            <p>Sou jovem aprendiz e estudante de TI, apaixonado por programação e design de jogos.</p>
+            <h2><i class="fas fa-user"></i> Sobre mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>👋 Tenho 18 anos e uma grande paixão por tecnologia. Em constante aprendizado para me tornar 
+                        um desenvolvedor de sucesso e transformar ideias em realidade! </p>
+                    <p>Atualmente estou focado em desenvolver minhas habilidades em:</p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Desenvolvimento de Jogos (Unity, Godot)</li>
+                        <li><i class="fas fa-check"></i> Programação Web (HTML, CSS, JavaScript)</li>
+                        <li><i class="fas fa-check"></i> Design de Interfaces</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="Img/eu no pc.jpg" alt="Pedro">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="Contato">
+    <section id="Contato" class="section">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Vamos trabalhar juntos? Me chame!</p>
-            <a href="mailto:pvitalmuller@gmail.com">Email</a><br>
-            <a href="https://www.linkedin.com/in/pedro-henrique-vital-muller">LinkedIn</a>
+            <h2><i class="fas fa-envelope"></i> Entre em Contato</h2>
+            <p>Vamos trabalhar juntos ou conversar sobre jogos e tecnologia!</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:pvitalmuller157.ipms@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-henrique-vital-muller" class="contact-btn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/seu-usuario" class="contact-btn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome" required aria-label="Seu nome">
+                <input type="email" placeholder="Seu email" required aria-label="Seu email">
+                <textarea placeholder="Sua mensagem" required aria-label="Sua mensagem"></textarea>
+                <button type="submit" class="submit-btn">Enviar <i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
     </section>
 
     <footer>
-        <h6>© 2024 Pedro Henrique - Todos os direitos reservados.</h6>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Link para Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Link para Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Link para YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <h6>© 2024 Pedro Henrique - Todos os direitos reservados.</h6>
+            <div class="mario-footer">
+                <div class="mario-run"></div> </div>
+        </div>
     </footer>
 </body>
 </html>
